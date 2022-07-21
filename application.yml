@@ -6,3 +6,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+security:
+  jwt:
+    uri: /auth/**
+    loginUri: /auth/login
+    header: Authorization
+    prefix: "Bearer "
+    expiration: 1800
+    secret: zkcdJFS34wfsdfsdfSDSD32dfsddLLerQSNMK34SOWEK5354fdgdf4
